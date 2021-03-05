@@ -126,3 +126,9 @@ df_main = df_main.merge(df_employment, on='county_code')
 df_main = df_main.merge(df_poverty, on='county_code')
 df_main = df_main.merge(df_income, on='county_code')
 df_main = df_main.merge(df_insurance, on='county_code')
+
+# Dropping Scott County since it creates a massive outlier due to a drug epidemic that dramatically increased its AIDs metrics
+df_main.drop(
+    index=[767],
+    inplace=True
+)
