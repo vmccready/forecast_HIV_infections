@@ -9,3 +9,17 @@ To start, we plotted each numerical column against HIV incidence. We wanted to s
 
 This is a portion of our columns. With these visualizations we decided to remove the columns num_SSPS, Med_AMAT_fac, and AMAT_fac. We can see that AMAT_fac has a couple vertical lines, and there is no linear relationship here. 
 
+<img src = "https://github.com/vmccready/forecast_HIV_infections/blob/main/images/residuals.png" width = "600" height = "450"> 
+
+After making a residual plot, we saw that as the predicted y value went up, our error increased. This didn't seem like a
+good model so we decided to look at the log relationship between our remaining columns and HIV incidence.
+
+
+<img src = "https://github.com/vmccready/forecast_HIV_infections/blob/main/images/log-relation.png" width = "600" height = "450" > 
+
+
+This visualization revealed that a lot of the columns we had origianlly kept did not have linear relations. We dropped a majority of our columns and decided to keep the following columns: 
+HIVdiag, diagpreva, drugdeathrate, population, plHIV, drugdep, adultmen, msm12mth, msm5yr, bup_phys, STATEABBREVIATION
+HIVprevalence, drugdeathrate, drugdeaths, unemployment_rate, poverty_rate, Uninsured Males, household_income (edited) 
+
+
