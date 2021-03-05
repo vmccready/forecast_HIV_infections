@@ -132,3 +132,28 @@ df_main.drop(
     index=[767],
     inplace=True
 )
+
+cols_to_drop = ['AMAT_fac',
+                'Med_TMAT_fac',
+                'drugdeathrate_est',
+                'Uninsured Males',
+                '%msm12month',
+                '%msm5yr',
+                'nonmedpain',
+                'Med_MH_fac',
+                'Med_SA_fac',
+                'Med_SMAT_fac',
+                'SA_fac',
+                'SMAT_fac',
+                'pctunmetneed',
+                'TMAT_fac',
+                'num_SSPs',
+                'mme_percap',
+                'partD30dayrxrate',
+                'MH_fac',
+                'Med_AMAT_fac',
+                'pctunins'               ]
+
+df_main.drop(cols_to_drop, axis=1, inplace=True)
+
+	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	
