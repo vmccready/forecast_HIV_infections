@@ -155,5 +155,5 @@ cols_to_drop = ['AMAT_fac',
                 'pctunins'               ]
 
 df_main.drop(cols_to_drop, axis=1, inplace=True)
-
+df_main = df_main.dropna()
 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	
