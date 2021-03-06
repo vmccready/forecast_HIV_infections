@@ -1,7 +1,9 @@
-# forecast_HIV_infections
-Regression Models to forecast HIV infections
+# Forecasting HIV
+### Regression Models to forecast HIV infections
 
 
+
+For EDA we examined the features of each table from our four sources. Our source for population data was actually split into four tables, employment data, income/poverty, and health insurance. We then developed a merge helper script that combined and formatted all of our sources and proved to be an invaluable asset as we worked with our data throughout the project.
 
 To start, we plotted each numerical column against HIV incidence. We wanted to see if there were any indicators that were obviously not linear relationships that we could remove off the bat. We also removed an outlier from the HIV incidence column that was severely skewing our data. Due to IV drug use, there was a huge outbreak in Scott County, Indiana. The value of HIV incidence here was 767. We added two columns that were insurance information to our main dataframe. 
 
