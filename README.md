@@ -22,6 +22,9 @@ with an average of 45.38238000396442
 <img src = "https://github.com/vmccready/forecast_HIV_infections/blob/main/images/log-relation.png" width = "600" height = "450" > 
 
 
+<img src = "https://github.com/vmccready/forecast_HIV_infections/blob/main/images/residuals_reduced_columns.png" width = "600" height = "450" > 
+     
+     
 This visualization revealed that a lot of the columns we had origianlly kept did not have linear relations. We dropped a majority of our columns and decided to keep the following columns: 
 HIVdiag, diagpreva, drugdeathrate, population, plHIV, drugdep, adultmen, msm12mth, msm5yr, bup_phys, STATEABBREVIATION
 HIVprevalence, drugdeathrate, drugdeaths, unemployment_rate, poverty_rate, Uninsured Males, household_income (edited) 
